@@ -34,7 +34,7 @@ public class Cita {
     public void agregarMascotaALaCita(Mascota mascota){
         if(!verificarMascota(mascota)){
             listMascotas.add(mascota);
-            System.out.println("Se agregó");
+            System.out.println("Se agrego");
         }else{
             System.out.println("Ya existe");
         }
@@ -43,9 +43,9 @@ public class Cita {
     @Override
     public String toString() {
         return "Cita{" +
-                "fecha=" + fecha +
+                "fecha:" + fecha +
                 ", id='" + id + '\'' +
-                ", lugar='" + lugar + '\'' +
+                ", lugar:'" + lugar + '\'' +
                 ", listMascotas=" + listMascotas +
                 ", propietario=" + propietario +
                 ", veterinario=" + veterinario +
