@@ -31,7 +31,7 @@ public class Cita {
         return centinela;
     }
 
-    public void agregarMascotaALaCita(Mascota mascota){
+    public void agregarMascotaALaCita(Mascota mascota, Mascota mascota2){
         if(!verificarMascota(mascota)){
             listMascotas.add(mascota);
             System.out.println("Se agrego");

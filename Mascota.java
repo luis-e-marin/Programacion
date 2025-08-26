@@ -1,12 +1,12 @@
 package org.example;
 
 public class Mascota {
-    private String id;
+    private int id;
     private String nombre;
-    private String edad;
+    private int edad;
     private String raza;
 
-    public Mascota(String id, String nombre, String edad, String raza) {
+    public Mascota(int id, String nombre, int edad, String raza) {
         this.id = id;
         this.nombre = nombre;
         this.edad = edad;
