@@ -20,7 +20,7 @@ public class Main {
 
         // Creamos Cita con la fecha personalizada
         Cita cita = new Cita(fecha, 12356,"Calarca", propietario, veterinario);
-        Cita cita1= new Cita(fecha, 12356,"Calarca", propietario, veterinario);
+
 
         // Creamos Mascota
         Mascota mascota = new Mascota(254136, "Pinta", 2, "Gato");
@@ -30,7 +30,9 @@ public class Main {
         cita.agregarMascotaALaCita(mascota,mascota2);
 
 
+
         // Mostramos la cita
         System.out.println(cita.toString());
+
      }
 }

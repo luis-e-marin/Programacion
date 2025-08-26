@@ -12,16 +12,16 @@ public class Mascota {
         this.edad = edad;
         this.raza = raza;
     }
-    public String getId(){
+    public int getId(){
         return id;
     }
 
     @Override
     public String toString() {
         return "Mascota{" +
-                "id='" + id + '\'' +
+                "id=" + id +
                 ", nombre='" + nombre + '\'' +
-                ", edad='" + edad + '\'' +
+                ", edad=" + edad +
                 ", raza='" + raza + '\'' +
                 '}';
     }

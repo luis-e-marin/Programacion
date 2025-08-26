@@ -22,13 +22,12 @@ public class Cita {
     }
 
     public boolean verificarMascota(Mascota mascota) {
-        boolean centinela = false;
-        for(Mascota est: listMascotas){
-            if(est.getId().equals(mascota.getId())){
-                centinela = true;
+        for (Mascota est : listMascotas) {
+            if (est.getId() == mascota.getId()) {
+                return true;
             }
         }
-        return centinela;
+        return false;
     }
 
     public void agregarMascotaALaCita(Mascota mascota, Mascota mascota2){
