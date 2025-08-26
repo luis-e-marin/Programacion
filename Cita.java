@@ -6,13 +6,13 @@ import java.util.List;
 
 public class Cita {
     private LocalDate fecha;
-    private String id;
+    private int id;
     private String lugar;
     private List<Mascota> listMascotas;
     private Propietario propietario;
     private Veterinario veterinario;
 
-    public Cita(LocalDate fecha, String id, String lugar, Propietario propietario, Veterinario veterinario) {
+    public Cita(LocalDate fecha, int id, String lugar, Propietario propietario, Veterinario veterinario) {
         this.fecha = fecha;
         this.id = id;
         this.lugar = lugar;

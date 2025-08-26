@@ -19,8 +19,8 @@ public class Main {
         LocalDate fecha = LocalDate.of(2025, 5, 28);
 
         // Creamos Cita con la fecha personalizada
-        Cita cita = new Cita(fecha, "12356","Calarca", propietario, veterinario);
-        Cita cita1= new Cita(fecha, "12356","Calarca", propietario, veterinario);
+        Cita cita = new Cita(fecha, 12356,"Calarca", propietario, veterinario);
+        Cita cita1= new Cita(fecha, 12356,"Calarca", propietario, veterinario);
 
         // Creamos Mascota
         Mascota mascota = new Mascota(254136, "Pinta", 2, "Gato");
