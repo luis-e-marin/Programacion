@@ -24,6 +24,7 @@ public class Cita {
     public boolean verificarMascota(Mascota mascota) {
         for (Mascota est : listMascotas) {
             if (est.getId() == mascota.getId()) {
+
                 return true;
             }
         }

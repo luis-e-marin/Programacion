@@ -13,6 +13,7 @@ public class Mascota {
         this.raza = raza;
     }
     public int getId(){
+
         return id;
     }
 
