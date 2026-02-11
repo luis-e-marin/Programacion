@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Cuaderno {
 
         public static void main(String[] args) {
-            int lado = ingresarEnteroPositivo("Ingrese el lado del cuadrado: ",0);
+            int lado = ingresarEnteroPositivo("Ingrese el lado del cuaderno: ",0);
             int perimetro = calcularPerimetro(lado);
             String mensaje = generarMensaje(perimetro);
             mostrarMensaje(mensaje);
@@ -38,7 +38,7 @@ public class Cuaderno {
     }
 
     public static String generarMensaje(int perimetro) {
-        return "El perímetro del cuadrado es: " + perimetro;
+        return "El perímetro del cuaderno es: " + perimetro;
     }
 
     public static void mostrarMensaje(String mensaje) {
