@@ -10,21 +10,21 @@ public class Producto {
         int numero2 = ingresarEntero("ingrese el segundo numero  a sumar : ");
         int numero3 = ingresarEntero("ingrese el  numero del producto : ");
         int numero4 = ingresarEntero("ingrese el  numero del producto: ");
-        int suma= calcularSuma(numero1,numero2);
+        int suma = calcularSuma(numero1,numero2);
         int producto = calcularProducto(numero3,numero4);
         String mensaje = generarMensaje(suma,producto,numero1,numero2,numero3,numero4);
         mostrarMensaje(mensaje);
     }
 
     public static int calcularSuma(int numero1, int numero2) {
-        int suma=0;
-        suma= numero1 + numero2;
+        int suma = 0;
+        suma = numero1 + numero2;
         return suma;
     }
 
     public static int calcularProducto(int numero3,int numero4){
-        int producto=0;
-        producto=numero3*numero4;
+        int producto = 0;
+        producto = numero3*numero4;
         return producto;
     }
 
