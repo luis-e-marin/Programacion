@@ -41,11 +41,11 @@ public class Articulo {
         return decimal;
     }
     static int ingresarEnteroPositivo(String mensaje, int valorMinimo) {
-        int valor=1;
+        int valor=0;
         boolean repetir = true;
         while (repetir) {
             valor = ingresarEntero(mensaje);
-            if (valor <= valorMinimo) {
+            if (valor < valorMinimo) {
                 System.out.println("El valor no es mayor que "+valorMinimo);
             } else {
                 repetir = false;
