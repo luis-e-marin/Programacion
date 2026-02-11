@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Cuaderno {
 
         public static void main(String[] args) {
-            int lado = ingresarEntero("Ingrese el lado del cuadrado: ");
+            int lado = ingresarEnteroPositivo("Ingrese el lado del cuadrado: ",0);
             int perimetro = calcularPerimetro(lado);
             String mensaje = generarMensaje(perimetro);
             mostrarMensaje(mensaje);
@@ -17,10 +17,23 @@ public class Cuaderno {
         return perimetro;
     }
 
-    public static int ingresarEntero(String mensaje) {
-        Scanner scanner = new Scanner(System.in);
+    static int ingresarEnteroPositivo(String mensaje, int valorMinimo) {
+        int valor=0;
+        boolean repetir = true;
+        while (repetir) {
+            valor = ingresarEntero(mensaje);
+            if (valor <= valorMinimo) {
+                System.out.println("El valor no es mayor que "+valorMinimo);
+            } else {
+                repetir = false;
+            }
+        }
+        return valor;
+    }
+    public static int ingresarEntero (String mensaje){
+        Scanner scanner= new Scanner(System.in);
         System.out.print(mensaje);
-        int entero = scanner.nextInt();
+        int entero= scanner.nextInt();
         return entero;
     }
 
