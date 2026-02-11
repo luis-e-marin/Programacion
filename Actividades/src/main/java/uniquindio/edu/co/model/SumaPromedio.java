@@ -27,7 +27,7 @@ public class SumaPromedio {
     }
 
     public static String generarMensaje(int suma,double promedio){
-        String mensaje =( " la suma de los numeros ingresados es: " + suma + "\n"+ "El promedio de la suma de los numeros ingresados es: " + promedio);
+        String mensaje = (" la suma de los numeros ingresados es: " + suma + "\n"+ "El promedio de la suma de los numeros ingresados es: " + promedio);
         return mensaje;
     }
 
