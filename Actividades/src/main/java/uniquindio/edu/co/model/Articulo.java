@@ -34,6 +34,7 @@ public class Articulo {
         }
         return valor;
     }
+
     public static double ingresarDecimal (String mensaje){
         Scanner scanner= new Scanner(System.in);
         System.out.print(mensaje);

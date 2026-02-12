@@ -17,7 +17,7 @@ public class Cuaderno {
         return perimetro;
     }
 
-    static int ingresarEnteroPositivo(String mensaje, int valorMinimo) {
+     public static int ingresarEnteroPositivo(String mensaje, int valorMinimo) {
         int valor=0;
         boolean repetir = true;
         while (repetir) {
@@ -30,6 +30,7 @@ public class Cuaderno {
         }
         return valor;
     }
+
     public static int ingresarEntero (String mensaje){
         Scanner scanner= new Scanner(System.in);
         System.out.print(mensaje);
