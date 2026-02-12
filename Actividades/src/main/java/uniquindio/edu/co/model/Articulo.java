@@ -40,7 +40,8 @@ public class Articulo {
         double decimal= scanner.nextDouble();
         return decimal;
     }
-    static int ingresarEnteroPositivo(String mensaje, int valorMinimo) {
+
+     public static int ingresarEnteroPositivo(String mensaje, int valorMinimo) {
         int valor=0;
         boolean repetir = true;
         while (repetir) {
@@ -59,6 +60,7 @@ public class Articulo {
         int entero= scanner.nextInt();
         return entero;
     }
+
     public static void mostrarMensaje (String mensaje){
         System.out.println(mensaje);
     }
