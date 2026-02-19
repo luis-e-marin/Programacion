@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Cuaderno {
 
-        public static void main(String[] args) {
+        public static void main(String[] args) { //Metodo principal4
             int lado = ingresarEnteroPositivo("Ingrese el lado del cuaderno: ",0);
             int perimetro = calcularPerimetro(lado);
             String mensaje = generarMensaje(perimetro);
@@ -15,6 +15,10 @@ public class Cuaderno {
     public static int calcularPerimetro(int lado) {
         int perimetro = 4 * lado;
         return perimetro;
+    }
+
+    public static String generarMensaje(int perimetro) {
+        return "El perímetro del cuaderno es: " + perimetro;
     }
 
      public static int ingresarEnteroPositivo(String mensaje, int valorMinimo) {
@@ -38,11 +42,11 @@ public class Cuaderno {
         return entero;
     }
 
-    public static String generarMensaje(int perimetro) {
-        return "El perímetro del cuaderno es: " + perimetro;
-    }
 
     public static void mostrarMensaje(String mensaje) {
         System.out.println(mensaje);
     }
 }
+
+//Scanner: Leer los datos escritos por teclado
+//
