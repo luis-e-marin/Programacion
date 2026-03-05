@@ -11,13 +11,11 @@ public class ClaseGrupal {
     private ArrayList<Socio> socios;
 
     public ClaseGrupal(String nombre, int cupoMaximo, String horario, Entrenador entrenador) {
-
         this.nombre = nombre;
         this.cupoMaximo = cupoMaximo;
         this.horario = horario;
         this.entrenador = entrenador;
         this.socios = new ArrayList<>();
-
     }
 
     public String getNombre() {
@@ -29,17 +27,12 @@ public class ClaseGrupal {
     }
 
     public boolean hayCupo(){
-
         return socios.size() < cupoMaximo;
-
     }
 
     public String mostrarInfo(){
-
         return nombre + " | Horario: " + horario +
                 " | Cupo: " + socios.size() + "/" + cupoMaximo +
                 " | Entrenador: " + entrenador.getNombre();
-
     }
-
 }

@@ -3,12 +3,10 @@ package uniquindio.edu.co.model;
 import java.util.ArrayList;
 
 public class Entrenador {
-
     private String nombre;
     private ArrayList<ClaseGrupal> clases;
 
     public Entrenador(String nombre) {
-
         this.nombre = nombre;
         this.clases = new ArrayList<>();
 
@@ -21,5 +19,4 @@ public class Entrenador {
     public ArrayList<ClaseGrupal> getClases() {
         return clases;
     }
-
 }

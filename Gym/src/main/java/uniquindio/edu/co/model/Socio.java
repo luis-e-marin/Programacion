@@ -11,12 +11,10 @@ public class Socio {
     private ArrayList<Pago> pagos;
 
     public Socio(String nombre, String id, Membresia membresia) {
-
         this.nombre = nombre;
         this.id = id;
         this.membresia = membresia;
         this.pagos = new ArrayList<>();
-
     }
 
     public String getNombre() {
@@ -36,14 +34,10 @@ public class Socio {
     }
 
     public String mostrarInfo(){
-
         String info = nombre + " | Membresía: " + membresia.getTipo();
-
         if(clase != null){
             info += " | Clase: " + clase.getNombre();
         }
-
         return info;
     }
-
 }

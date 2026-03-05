@@ -9,11 +9,9 @@ public class Pago {
     private String metodo;
 
     public Pago(LocalDate fecha, double valor, String metodo) {
-
         this.fecha = fecha;
         this.valor = valor;
         this.metodo = metodo;
-
     }
 
 }

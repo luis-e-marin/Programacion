@@ -1,5 +1,4 @@
 package uniquindio.edu.co;
-
 import uniquindio.edu.co.model.*;
 
 import java.time.LocalDate;
@@ -7,7 +6,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-
     static ArrayList<Socio> socios = new ArrayList<>();
     static ArrayList<Entrenador> entrenadores = new ArrayList<>();
     static ArrayList<ClaseGrupal> clases = new ArrayList<>();
