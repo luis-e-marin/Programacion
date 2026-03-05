@@ -1,4 +1,4 @@
-package uniquindio.edu.co.model;
+package uniquindio.edu.co;
 
 import java.util.Scanner;
 

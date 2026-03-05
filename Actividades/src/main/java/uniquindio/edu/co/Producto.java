@@ -1,8 +1,6 @@
-package uniquindio.edu.co.model;
+package uniquindio.edu.co;
 
 import java.util.Scanner;
-
-import static uniquindio.edu.co.model.Cuaderno.generarMensaje;
 
 public class Producto {
     public static  void main(String []args) {
