@@ -33,11 +33,15 @@ public class Socio {
         return pagos;
     }
 
-    public String mostrarInfo(){
-        String info = nombre + " | Membresía: " + membresia.getTipo();
+    public String generarMensaje(){
+
+        String info = "Socio: " + nombre +
+                " | Membresía: " + membresia.getTipo();
+
         if(clase != null){
             info += " | Clase: " + clase.getNombre();
         }
+
         return info;
     }
 }

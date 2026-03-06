@@ -22,16 +22,25 @@ public class ClaseGrupal {
         return nombre;
     }
 
-    public ArrayList<Socio> getSocios() {
-        return socios;
-    }
-
     public boolean hayCupo(){
         return socios.size() < cupoMaximo;
     }
 
-    public String mostrarInfo(){
-        return nombre + " | Horario: " + horario +
+    public boolean agregarSocio(Socio socio){
+
+        if(hayCupo()){
+            socios.add(socio);
+            socio.setClase(this);
+            return true;
+        }
+
+        return false;
+    }
+
+    public String generarMensaje(){
+
+        return "Clase: " + nombre +
+                " | Horario: " + horario +
                 " | Cupo: " + socios.size() + "/" + cupoMaximo +
                 " | Entrenador: " + entrenador.getNombre();
     }

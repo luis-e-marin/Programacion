@@ -3,6 +3,7 @@ package uniquindio.edu.co.model;
 import java.time.LocalDate;
 
 public class Membresia {
+
     private String tipo;
     private LocalDate fechaInicio;
     private LocalDate fechaFin;
@@ -21,5 +22,9 @@ public class Membresia {
 
     public LocalDate getFechaFin() {
         return fechaFin;
+    }
+
+    public double getPrecio() {
+        return precio;
     }
 }

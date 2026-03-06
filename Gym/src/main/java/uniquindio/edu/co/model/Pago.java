@@ -14,4 +14,9 @@ public class Pago {
         this.metodo = metodo;
     }
 
+    public String generarMensaje(){
+        return "Pago | Fecha: " + fecha +
+                " | Valor: " + valor +
+                " | Método: " + metodo;
+    }
 }
