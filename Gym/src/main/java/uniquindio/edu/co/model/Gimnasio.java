@@ -18,7 +18,6 @@ public class Gimnasio {
     }
 
     public void iniciarSistema() {
-
         int opcion;
 
         do {
